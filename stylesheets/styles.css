@@ -1,0 +1,136 @@
+section.background {
+  /* background-color: yellow; */
+  min-height: 100vh;
+  width: 100vw;
+}
+
+div.container {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  font-family: Orbitron;
+  font-size: 28px;
+  font-weight: 900;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 450px;
+  position: relative;
+  top: 50px;
+}
+
+div.main {
+  margin: 20px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.title {
+  display: block;
+  padding: 10px 0;
+}
+
+div.instructions {
+  margin: 10px 0 0 0;
+}
+
+div.instructions > span {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 100;
+}
+
+span > span {
+  font-size: 16px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+div.instructions > span:first-child {
+  font-size: 18px;
+  padding-bottom: 6px;
+  text-decoration: underline;
+}
+
+span.mouse {
+  padding-bottom: 10px;
+}
+
+span.keyboard-row-2 {
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 100px;
+  font-family: Open Sans;
+  font-size: 20px;
+  height: 30px;
+  padding-left: 18px;
+  margin-top: 10px;
+  width: 350px;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: lightgray;
+  font-family: Orbitron;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+input.show-list {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+ul.colors-list {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+ul.colors-list.hidden {
+  display: none;
+}
+
+li {
+  font-family: Open Sans;
+  font-size: 20px;
+  width: 370px;
+}
+
+li:last-child {
+  margin-bottom: 16px;
+}
+
+li.each-color:hover, li.each-color:focus {
+  background-color: lightgray;
+}
+
+span.bold {
+  font-weight: 900;
+  padding-left: 18px;
+}
+
+span.normal {
+  font-weight: 100;
+}
+
+span.error {
+  display: block;
+  font-family: Open Sans;
+  font-size: 20px;
+  padding-top: 20px;
+  width: 360px;
+}
