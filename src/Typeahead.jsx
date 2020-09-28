@@ -5,10 +5,10 @@ class Typeahead extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: '',
-      backgroundColor: 'white',
+      input: "",
+      backgroundColor: "white",
       hideList: false,
-    }
+    };
 
     this.list = [];
 
@@ -21,9 +21,9 @@ class Typeahead extends React.Component {
 
   // event listeners for tab, enter, escape, and click
   componentDidMount() {
-    document.addEventListener('keydown', this.handleKeyDown);
-    document.addEventListener('mousedown', this.handleClickOutside);
-    document.addEventListener('mouseup', this.handleClick);
+    document.addEventListener("keydown", this.handleKeyDown);
+    document.addEventListener("mousedown", this.handleClickOutside);
+    document.addEventListener("mouseup", this.handleClick);
   }
 
   handleKeyDown(e) {
@@ -43,7 +43,7 @@ class Typeahead extends React.Component {
         }
       }
     } else if (e.key === "Tab" && this.list.length) {
-      if ( document.activeElement === inputEle && this.list.length) {
+      if (document.activeElement === inputEle && this.list.length) {
         setTimeout(() => liColorsEle[0].focus(), 1);
       }
     } else if (e.key === "Escape") {
@@ -56,16 +56,18 @@ class Typeahead extends React.Component {
     let inputEle = document.getElementsByTagName("input")[0];
     let liColorsEle = Array.from(document.getElementsByClassName("each-color"));
     if (
-      document.activeElement !== inputEle && 
-      !liColorsEle.some(l => l === document.activeElement)
+      document.activeElement !== inputEle &&
+      !liColorsEle.some((l) => l === document.activeElement)
     ) {
       this.setState({ hideList: true });
-    } 
+    }
   }
-  
-  handleClick() {
-    let liColorsEle = Array.from(document.getElementsByClassName("each-color"))
-    if (liColorsEle.some((l) => l === document.activeElement)) {
+
+  handleClick(e) {
+    let liColorsEle = Array.from(document.getElementsByClassName("each-color"));
+    if (e.target === document.getElementsByClassName("background")[0]) {
+      this.setState({ hideList: true });
+    } else if (liColorsEle.some((l) => l === document.activeElement)) {
       for (let i = 0; i < liColorsEle.length; i++) {
         let li = liColorsEle[i];
         if (document.activeElement === li) {
@@ -81,16 +83,15 @@ class Typeahead extends React.Component {
   }
 
   update(field) {
-    return e => (
-      this.setState({ [field]: e.target.value })
-    )
+    return (e) => this.setState({ [field]: e.target.value });
   }
 
   filterColors() {
     const { list } = this.props;
     const { input } = this.state;
-    
-    let colorsList = null, errorMsg = null;
+
+    let colorsList = null,
+      errorMsg = null;
     if (
       input.length > 0 &&
       input.split("").some((char) => char !== " ") &&
@@ -135,7 +136,7 @@ class Typeahead extends React.Component {
   render() {
     const { input, backgroundColor, hideList } = this.state;
     const [colorsList, errorMsg] = this.filterColors();
-   
+
     return (
       <section
         className="background"
