@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/Color-Picker/static/js/main.20b8b33f.chunk.js",
-    "main.js.map": "/Color-Picker/static/js/main.20b8b33f.chunk.js.map",
-    "runtime-main.js": "/Color-Picker/static/js/runtime-main.c63eb57a.js",
-    "runtime-main.js.map": "/Color-Picker/static/js/runtime-main.c63eb57a.js.map",
-    "static/js/2.34aeebb9.chunk.js": "/Color-Picker/static/js/2.34aeebb9.chunk.js",
-    "static/js/2.34aeebb9.chunk.js.map": "/Color-Picker/static/js/2.34aeebb9.chunk.js.map",
-    "index.html": "/Color-Picker/index.html",
-    "precache-manifest.e61eb5511afa49005f6accf0e43776c6.js": "/Color-Picker/precache-manifest.e61eb5511afa49005f6accf0e43776c6.js",
-    "service-worker.js": "/Color-Picker/service-worker.js",
-    "static/js/2.34aeebb9.chunk.js.LICENSE.txt": "/Color-Picker/static/js/2.34aeebb9.chunk.js.LICENSE.txt"
+    "main.js": "/Color-Finder/static/js/main.20b8b33f.chunk.js",
+    "main.js.map": "/Color-Finder/static/js/main.20b8b33f.chunk.js.map",
+    "runtime-main.js": "/Color-Finder/static/js/runtime-main.3b81ab72.js",
+    "runtime-main.js.map": "/Color-Finder/static/js/runtime-main.3b81ab72.js.map",
+    "static/js/2.34aeebb9.chunk.js": "/Color-Finder/static/js/2.34aeebb9.chunk.js",
+    "static/js/2.34aeebb9.chunk.js.map": "/Color-Finder/static/js/2.34aeebb9.chunk.js.map",
+    "index.html": "/Color-Finder/index.html",
+    "precache-manifest.e78b2c0be35479e874d3f9ca071fd98c.js": "/Color-Finder/precache-manifest.e78b2c0be35479e874d3f9ca071fd98c.js",
+    "service-worker.js": "/Color-Finder/service-worker.js",
+    "static/js/2.34aeebb9.chunk.js.LICENSE.txt": "/Color-Finder/static/js/2.34aeebb9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c63eb57a.js",
+    "static/js/runtime-main.3b81ab72.js",
     "static/js/2.34aeebb9.chunk.js",
     "static/js/main.20b8b33f.chunk.js"
   ]
