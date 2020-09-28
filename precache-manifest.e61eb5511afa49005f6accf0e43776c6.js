@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "facd14cbe34e1537b32d17165e7b1c1f",
+    "revision": "4cbb66e29cec301e23556664705b003c",
     "url": "/Color-Picker/index.html"
   },
   {
